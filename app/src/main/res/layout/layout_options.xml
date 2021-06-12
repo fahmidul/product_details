@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/gray_CECECE" />
+
+    <RelativeLayout
+        android:id="@+id/relSpecifications"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/imgSpecifications"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:src="@drawable/specification"
+            app:tint="@color/gray_999999" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imgSpecifications"
+            android:gravity="center_vertical"
+            android:text="Specifications"
+            android:textColor="@color/black_515151" />
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:src="@drawable/right_arrow"
+            app:layout_constraintRight_toRightOf="parent"
+            app:tint="@color/gray_CECECE" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_CECECE" />
+
+    <RelativeLayout
+        android:id="@+id/relReviews"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp">
+
+
+        <ImageView
+            android:id="@+id/imgReviews"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:src="@drawable/reviews"
+            app:tint="@color/gray_999999" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imgReviews"
+            android:gravity="center_vertical"
+            android:text="Reviews"
+            android:textColor="@color/black_515151" />
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:src="@drawable/right_arrow"
+            app:layout_constraintRight_toRightOf="parent"
+            app:tint="@color/gray_CECECE" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_CECECE" />
+
+    <RelativeLayout
+        android:id="@+id/relHowToOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/imgHowToOrder"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:src="@drawable/how_to_order"
+            app:tint="@color/gray_999999" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imgHowToOrder"
+            android:gravity="center_vertical"
+            android:text="How to Order"
+            android:textColor="@color/black_515151" />
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:src="@drawable/right_arrow"
+            app:layout_constraintRight_toRightOf="parent"
+            app:tint="@color/gray_CECECE" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_CECECE" />
+
+    <RelativeLayout
+        android:id="@+id/relFAQ"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/imgFAQ"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:src="@drawable/faq"
+            app:tint="@color/gray_999999" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imgFAQ"
+            android:gravity="center_vertical"
+            android:text="FAQ"
+            android:textColor="@color/black_515151" />
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:src="@drawable/right_arrow"
+            app:layout_constraintRight_toRightOf="parent"
+            app:tint="@color/gray_CECECE" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_CECECE" />
+
+    <RelativeLayout
+        android:id="@+id/relWholesaleInquiry"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/imgWholesaleInquiry"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:src="@drawable/wholesale_inquiry"
+            app:tint="@color/gray_999999" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imgWholesaleInquiry"
+            android:gravity="center_vertical"
+            android:text="Specifications"
+            android:textColor="@color/black_515151" />
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:src="@drawable/right_arrow"
+            app:layout_constraintRight_toRightOf="parent"
+            app:tint="@color/gray_CECECE" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_CECECE" />
+
+    <RelativeLayout
+        android:id="@+id/relDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/imgDescription"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:src="@drawable/descriptions"
+            app:tint="@color/gray_999999" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imgDescription"
+            android:gravity="center_vertical"
+            android:text="Descriptions"
+            android:textColor="@color/black_515151" />
+
+
+        <ImageView
+            android:id="@+id/imgOptionsMore"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:src="@drawable/right_arrow"
+            app:layout_constraintRight_toRightOf="parent"
+            app:tint="@color/gray_CECECE" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
