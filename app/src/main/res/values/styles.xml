@@ -9,6 +9,20 @@
         <item name="android:itemTextAppearance">@color/black_515151</item>
 
     </style>
+    <!-- set the rounded drawable as background to your bottom sheet -->
+    <style name="BottomSheet" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bg_bottom_sheet_dialog_fragment</item>
+    </style>
 
-    <!-- declare the theme name that's actually applied in the manifest file -->
+    <style name="BaseBottomSheetDialog" parent="@style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="bottomSheetStyle">@style/BottomSheet</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="BaseBottomSheetDialog" />
+
+<!--    <style name="BottomDialog.Animation" parent="Animation.AppCompat.Dialog">-->
+<!--        <item name="android:windowEnterAnimation">@anim/translate_dialog_in</item>-->
+<!--        <item name="android:windowExitAnimation">@anim/translate_dialog_out</item>-->
+<!--    </style>-->
 </resources>

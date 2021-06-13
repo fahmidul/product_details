@@ -13,4 +13,9 @@ Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
     <string name="add_to_cart">ADD TO CART</string>
     <string name="view_full_description">View Full Description</string>
     <string name="buy_now">BUY NOW</string>
+    <string name="product_option">Product Option</string>
+    <string name="price_range">Bdt. 2850 - Bdt. 1290</string>
+    <string name="color">Color</string>
+    <string name="size">Size</string>
+    <string name="quantity">Quantity</string>
 </resources>

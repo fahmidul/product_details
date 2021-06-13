@@ -6,12 +6,15 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.Dialog;
 import android.graphics.Paint;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.google.android.material.appbar.AppBarLayout;
@@ -100,6 +103,8 @@ public class ProductDetailsActivity extends AppCompatActivity implements Product
 
     @Override
     public void onItemClick(View view, int position) {
+        BottomSheetFragment bottomSheetFragment = new BottomSheetFragment();
+        bottomSheetFragment.show(getSupportFragmentManager(), bottomSheetFragment.getTag());
 
     }
 
@@ -126,4 +131,7 @@ public class ProductDetailsActivity extends AppCompatActivity implements Product
         MenuItem item2 = menu.findItem(R.id.action_search);
         item2.setVisible(true);
     }
+
+
+
 }

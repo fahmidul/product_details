@@ -20,6 +20,7 @@
         android:id="@+id/imgFastDelivery"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:padding="5dp"
         android:src="@drawable/fast_delivery"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hr1"

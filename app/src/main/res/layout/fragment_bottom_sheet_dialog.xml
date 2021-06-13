@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgCancel"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:src="@drawable/cancel"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/product_option"
+            android:textColor="@color/black_1D1D1E"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgCancel"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imgCancel" />
+
+        <ImageView
+            android:id="@+id/imgArrowLeft"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/circle_background"
+            android:src="@drawable/back_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/cardImgHolder"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/cardImgHolder"
+            app:tint="@color/white" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardImgHolder"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintLeft_toRightOf="@+id/imgArrowLeft"
+            app:layout_constraintRight_toLeftOf="@+id/imgArrowRight"
+            app:layout_constraintTop_toBottomOf="@+id/imgCancel">
+
+            <ImageView
+                android:id="@+id/imgProductExpand"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/header_image" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <ImageView
+            android:id="@+id/imgArrowRight"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/circle_background"
+            android:src="@drawable/right_arrow"
+            app:layout_constraintBottom_toBottomOf="@+id/cardImgHolder"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/cardImgHolder"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/tvPriceRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/price_range"
+            android:textColor="@color/black_1D1D1E"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardImgHolder" />
+
+        <TextView
+            android:id="@+id/tvColorTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/color"
+            android:textColor="@color/black_1D1D1E"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPriceRange"
+
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:visibility="visible"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvColorTitle" />
+
+
+        <TextView
+            android:id="@+id/tvSizeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/size"
+            android:textColor="@color/black_1D1D1E"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerViewProduct" />
+
+        <LinearLayout
+            android:id="@+id/linSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSizeTitle">
+
+            <TextView
+                android:id="@+id/tvSizeS"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/product_image_background"
+                android:gravity="center"
+                android:text="S"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSizeM"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/product_image_background"
+                android:gravity="center"
+                android:text="M"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSizeX"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/product_image_background"
+                android:gravity="center"
+                android:text="X"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSizeXL"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/product_image_background"
+                android:gravity="center"
+                android:text="XL"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvQuantityTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/quantity"
+            android:textColor="@color/black_1D1D1E"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linSize" />
+
+        <ImageView
+            android:id="@+id/imgDecrement"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/decrement"
+            app:layout_constraintBottom_toBottomOf="@+id/tvQuantityTitle"
+            app:layout_constraintLeft_toRightOf="@+id/tvQuantityTitle"
+            app:layout_constraintTop_toTopOf="@+id/tvQuantityTitle"
+            app:tint="@color/gray_C7C7C7" />
+
+        <TextView
+            android:id="@+id/tvProductCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:textColor="@color/black_1D1D1E"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgDecrement"
+            app:layout_constraintLeft_toRightOf="@+id/imgDecrement"
+            app:layout_constraintTop_toTopOf="@+id/imgDecrement" />
+
+        <ImageView
+            android:id="@+id/imgIncrement"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/increment"
+            app:layout_constraintBottom_toBottomOf="@+id/tvProductCounter"
+            app:layout_constraintLeft_toRightOf="@+id/tvProductCounter"
+            app:layout_constraintTop_toTopOf="@+id/tvProductCounter"
+            app:tint="@color/green" />
+
+        <RelativeLayout
+            android:id="@+id/reDelivery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgIncrement">
+
+            <include
+                layout="@layout/layout_delivery"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerViewProduct" />
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
